@@ -7,8 +7,14 @@ const CurrencyConverter = () => {
   const [chosenPrimaryCurrency, setChosenPrimaryCurrency] = useState("BTC");
   const [chosenSecondaryCurrency, setChosenSecondaryCurrency] = useState("BTC");
   const [amount, setAmount] = useState(1);
-  const [exchangeRate, setExchangeRate] = useState(0);
+
   const [result, setResult] = useState(0);
+
+  const [exchangedData, setExchangedData] = useState({
+    primaryCurrency: "BTC",
+    secondaryCurrency: "BTC",
+    exchangeRate: 0,
+  });
 
   console.log(amount);
 
@@ -33,20 +39,24 @@ const CurrencyConverter = () => {
         console.log(
           response.data["Realtime Currency Exchange Rate"]["5. Exchange Rate"],
         );
-        setExchangeRate(
-          response.data["Realtime Currency Exchange Rate"]["5. Exchange Rate"],
-        );
+        // setExchangeRate(response.data["Realtime Currency Exchange Rate"]["5. Exchange Rate"]);
         setResult(
           response.data["Realtime Currency Exchange Rate"]["5. Exchange Rate"] *
             amount,
         );
+        // setPrimaryCurrencyExchange(primaryCurrencyExchange);
+        // setSecondaryCurrencyExchange(secondaryCurrencyExchange);
+
+        setExchangedData({
+          primaryCurrency: chosenPrimaryCurrency,
+          secondaryCurrency: chosenSecondaryCurrency,
+          exchangeRate: response.data["Realtime Currency Exchange Rate"]["5. Exchange Rate"],
+        })
       })
       .catch(error => {
         console.error(error);
       });
   };
-
-  console.log(exchangeRate);
 
   return (
     <div className="currencyConverter">
@@ -82,10 +92,10 @@ const CurrencyConverter = () => {
             <tr>
               <td>Secondary Currency: </td>
               <td>
-                <input 
-                  type="number" 
-                  name="currencyAmount2" 
-                  value={result} 
+                <input
+                  type="number"
+                  name="currencyAmount2"
+                  value={result}
                   disabled={true}
                 />
               </td>
@@ -110,10 +120,8 @@ const CurrencyConverter = () => {
         </button>
       </div>
 
-      <ExchangeRate 
-        exchangeRate={exchangeRate}
-        chosenPrimaryCurrency={chosenPrimaryCurrency}
-        chosenSecondaryCurrency={chosenSecondaryCurrency}
+      <ExchangeRate
+        exchangedData={exchangedData}
       />
     </div>
   );
