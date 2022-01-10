@@ -10,7 +10,7 @@ const NewsFeed = () => {
       url: "https://crypto-news15.p.rapidapi.com/news",
       headers: {
         "x-rapidapi-host": "crypto-news15.p.rapidapi.com",
-        "x-rapidapi-key": "4f44b2b4famsh9851d3135c14023p1d68aajsn8515efd61176",
+        "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
       },
     };
 
@@ -27,7 +27,20 @@ const NewsFeed = () => {
 
   console.log(articles);
 
-  return <div className="newsFeed">Here is the news baby!</div>;
+  const first7Articles = articles?.slice(0, 7);
+
+  return (
+    <div className="newsFeed">
+      <h2>News Feed</h2>
+      {first7Articles?.map((article, _index) => (
+        <div key={_index}>
+          <a href={article.url}>
+            <p>{article.title}</p>
+          </a>
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default NewsFeed;
