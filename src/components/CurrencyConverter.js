@@ -110,7 +110,11 @@ const CurrencyConverter = () => {
         </button>
       </div>
 
-      <ExchangeRate />
+      <ExchangeRate 
+        exchangeRate={exchangeRate}
+        chosenPrimaryCurrency={chosenPrimaryCurrency}
+        chosenSecondaryCurrency={chosenSecondaryCurrency}
+      />
     </div>
   );
 };

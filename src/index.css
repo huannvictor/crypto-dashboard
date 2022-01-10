@@ -29,3 +29,8 @@ code {
 .exchangeRate {
   background: greenyellow;
 }
+
+#evidencedValue {
+  font-size: 2em;
+  font-style: bold;
+}
