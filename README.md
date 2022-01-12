@@ -1,6 +1,6 @@
 # Crypto Dashboard
 
-Confira o resultado em: [endereço]()  
+Confira o resultado em: [endereço](https://huannvictor.github.io/crypto-dashboard/)  
 
 
 # Sobre o projeto: Crypto Dashboard
@@ -41,5 +41,3 @@ Comando roda o aplicativo no mode de desenvolvimento, acesse: http://localhost:3
 ### execute: `npm run start:backend`
 Comando inicia o servidor em http://localhost:8000
 
-
-![Huann Almeida](https://raw.githubusercontent.com/huannvictor/huannvictor/main/assets/caracter2.png){:width="50%"}
