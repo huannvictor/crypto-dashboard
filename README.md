@@ -43,3 +43,7 @@ _tutorial (em inglês) de como conseguir sua rapidApiKey: [aqui](https://youtu.b
 ## execute: `npm run start:backend`
  - comando inicia o servidor em http://localhost:8000
 
+
+## Layout Final
+
+![screenshot](public/assets/screenshot.png)
