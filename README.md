@@ -1,13 +1,13 @@
 # Crypto Dashboard
 
-Confira o resultado em: [endereço](https://huannvictor.github.io/crypto-dashboard/)  
+<!--- (Confira o resultado em: [endereço](https://huannvictor.github.io/crypto-dashboard/)  -->
 
 
 # Sobre o projeto: Crypto Dashboard
 
 Dashboard feita seguindo o tutorial do canal [Code with Ania Kubów](https://www.youtube.com/watch?v=WDwhJNbWka0&t=2997s) onde consumi informações de duas APIs do marketplace [RapidApi.com](http://rapidapi.com).
 - Alpha Vantage: para converter as moedas com valores atualizados.  
-  [link aqui]("https://rapidapi.com/alphavantage/api/alpha-vantage/")
+  [link aqui](https://rapidapi.com/alphavantage/api/alpha-vantage/)  
 - Crypto News: onde encontramos notícias do universo crypto.  
   [link aqui](https://rapidapi.com/enochmwanga@gmail.com/api/crypto-news15) 
 
