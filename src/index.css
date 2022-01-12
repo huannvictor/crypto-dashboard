@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #73482f;
 }
 
 code {
@@ -23,34 +24,52 @@ code {
 }
 
 .newsFeed {
-  background: rgb(204, 204, 231);
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #bf665e;
   margin: 5px;
   box-shadow: 0 3px 10px rgb(0 0 0 /0.2);
   max-width: 300px;
 }
 
+.newsFeed > div {
+  border-bottom: 1px solid #73482f;
+  padding: 10px;
+  transition: filter 0.3s;
+}
+
+.newsFeed > div:hover {
+  background: #bf665e;
+  filter: brightness(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .currencyConverter {
-  background: rgb(230, 223, 211);
+  background: #a6806a;
   padding: 10px;
   margin: 5px;
   box-shadow: 0 3px 10px rgb(0 0 0 /0.2);
   text-align: center;
 }
 
+.inputBox {
+  background-color: #f2c1ae;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 /0.2);
+}
+
 .exchangeRate {
-  background: rgb(221, 230, 221);
+  background: #f2c1ae;
   padding: 20px;
   margin-top: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 /0.2);
   border-radius: 10px;
-}
-
-.inputBox {
-  background-color: rgb(218, 227, 238);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgb(0 0 0 /0.2);
 }
 
 button {
