@@ -24,20 +24,22 @@ Nessa aplicação simples podemos converter valores e ver as principais notícia
 
 # Como executar
 
-### `npm i`
-instale todas as dependências necessárias  
+## `npm i`
+- instale todas as dependências necessárias  
 
 
-### arquivo `.env`
-crie um arquivo `.env` no `root` do seu projeto e nele insira o seguinte código abaixo:
+## arquivo `.env`
+- crie um arquivo `.env` no `root` do seu projeto e nele insira o seguinte código:
 ```bash
 REACT_APP_RAPID_API_KEY={sua_chave_api_aqui}
 ```
-sem essas informação seu código não conseguirá acessar as informações das APIs
+_sem essas informação seu código não conseguirá acessar as informações das APIs_  
+_você encontra sua chave assim que subscrever nas APIs, dentro marketplace_  
+_tutorial (em inglês) de como conseguir sua rapidApiKey: [aqui](https://youtu.be/WDwhJNbWka0)_
 
-### execute: `npm run start:frontend`
-Comando roda o aplicativo no mode de desenvolvimento, acesse: http://localhost:3000 no navegador.
+## execute: `npm run start:frontend`
+- comando roda o aplicativo no mode de desenvolvimento, acesse: http://localhost:3000 no navegador.
 
-### execute: `npm run start:backend`
-Comando inicia o servidor em http://localhost:8000
+## execute: `npm run start:backend`
+ - comando inicia o servidor em http://localhost:8000
 
