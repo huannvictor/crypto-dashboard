@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Crypto Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Confira o resultado em: [endereço]()  
 
-## Available Scripts
 
-In the project directory, you can run:
+# Sobre o projeto: Crypto Dashboard
 
-### `npm start`
+Dashboard feita seguindo o tutorial do canal [Code with Ania Kubów](https://www.youtube.com/watch?v=WDwhJNbWka0&t=2997s) onde consumi informações de duas APIs do marketplace [RapidApi.com](http://rapidapi.com).
+- Alpha Vantage: para converter as moedas com valores atualizados.  
+  [link aqui]("https://rapidapi.com/alphavantage/api/alpha-vantage/")
+- Crypto News: onde encontramos notícias do universo crypto.  
+  [link aqui](https://rapidapi.com/enochmwanga@gmail.com/api/crypto-news15) 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Nessa aplicação simples podemos converter valores e ver as principais notícias do universo de crypto moedas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias
+[![ReactJs](https://img.shields.io/badge/-React-9cf)](https://pt-br.reactjs.org/)  
+[![NodeJs](https://img.shields.io/badge/-NodeJs-green)](https://nodejs.org/en/)  
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Bibliotecas & Utilitários
+  [![Axios](https://img.shields.io/badge/CientHTTP-Axios-blue)](https://axios-http.com/)  
+  [![Express](https://img.shields.io/badge/Framework-Express-blue)](https://expressjs.com/)
 
-### `npm run build`
+# Como executar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `npm i`
+instale todas as dependências necessárias  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### arquivo `.env`
+crie um arquivo `.env` no `root` do seu projeto e nele insira o seguinte código abaixo:
+```bash
+REACT_APP_RAPID_API_KEY={sua_chave_api_aqui}
+```
+sem essas informação seu código não conseguirá acessar as informações das APIs
 
-### `npm run eject`
+### execute: `npm run start:frontend`
+Comando roda o aplicativo no mode de desenvolvimento, acesse: http://localhost:3000 no navegador.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### execute: `npm run start:backend`
+Comando inicia o servidor em http://localhost:8000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Huann Almeida](https://raw.githubusercontent.com/huannvictor/huannvictor/main/assets/caracter2.png){:width="50%"}
