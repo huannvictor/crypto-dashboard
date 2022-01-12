@@ -1,6 +1,6 @@
 # Crypto Dashboard
 
-Confira o resultado em: [endereço](https://huannvictor.github.io/crypto-dashboard/)  
+<!--- (Confira o resultado em: [endereço](https://huannvictor.github.io/crypto-dashboard/)  -->
 
 
 # Sobre o projeto: Crypto Dashboard
